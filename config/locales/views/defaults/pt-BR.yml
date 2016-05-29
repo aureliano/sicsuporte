@@ -1,0 +1,13 @@
+---
+pt-BR:
+  new: Novo
+  show: Detalhar
+  edit: Alterar
+  back: Voltar
+  destroy: Excluir
+  success:
+    actions:
+      create: criado(a)
+      update: atualizado(a)
+      destroy: excluído(a)
+  success_message: "%{entity} %{action} com sucesso."

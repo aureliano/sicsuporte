@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: Trata Decisões
+  descricao: Módulo para tratamento de débitos do macroprocesso do crédito público.
+  integracao_continua: tdecis/
+
+two:
+  nome: Pré Cadin
+  descricao: Módulo de inserção de contribuintes no cadastro de inadimplentes.
+  integracao_continua: precadin/

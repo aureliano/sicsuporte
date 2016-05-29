@@ -1,0 +1,17 @@
+---
+pt-BR:
+  projetos:
+    index:
+      title: Listagem de projetos
+      nome: Nome
+      descricao: Descrição
+    new:
+      title: Novo projeto
+    show:
+      title: Projeto
+      nome: Nome
+      descricao: Descrição
+      integracao_continua: Integração contínua
+      confirm_delete: "Deseja realmente excluir o projeto %{project}?"
+    edit:
+      title: Alterar projeto

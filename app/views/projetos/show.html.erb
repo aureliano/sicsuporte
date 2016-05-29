@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t '.title' %></h1>
+
+<p>
+  <strong><%= t '.nome' %>:</strong>
+  <%= @projeto.nome %>
+</p>
+
+<p>
+  <strong><%= t '.descricao' %>:</strong>
+  <%= @projeto.descricao %>
+</p>
+
+<p>
+  <strong><%= t '.integracao_continua' %>:</strong>
+  <%= @projeto.integracao_continua %>
+</p>
+
+<%= link_to t('edit'), edit_projeto_path(@projeto) %> |
+<%= link_to t('back'), projetos_path %> |
+<%= link_to t('destroy'), @projeto, method: :delete, data: { confirm: t('.confirm_delete', project: @projeto.nome) } %>

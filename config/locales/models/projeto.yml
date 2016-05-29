@@ -1,0 +1,10 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      projeto: Projeto
+    attributes:
+      projeto:
+        nome: Nome
+        descricao: Descrição
+        integracao_continua: Integração contínua
