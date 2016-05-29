@@ -1,5 +1,9 @@
 ---
 pt-BR:
+  project_name: SIC Suporte
+  home: Início
+  about: Sobre
+  contact: Contatos
   new: Novo
   show: Detalhar
   edit: Alterar
@@ -11,3 +15,6 @@ pt-BR:
       update: atualizado(a)
       destroy: excluído(a)
   success_message: "%{entity} %{action} com sucesso."
+  menu:
+    vertical:
+      project: Projetos
