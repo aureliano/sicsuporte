@@ -15,6 +15,13 @@ pt-BR:
       update: atualizado(a)
       destroy: excluído(a)
   success_message: "%{entity} %{action} com sucesso."
+  validation_error: "%{error_count} erros impediram que sua requisição fosse concluída:"
   menu:
     vertical:
       project: Projetos
+  alert:
+    title:
+      info: Informação
+      success: Sucesso
+      warning: Atenção
+      error: Erro
