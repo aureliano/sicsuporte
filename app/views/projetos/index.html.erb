@@ -1,26 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-9">
+    <p id="notice"><%= notice %></p>
+  </div>
+</div>
 
-<h1><%= t '.title' %></h1>
+<div class="row">
+  <div class="col-md-9">
+    <h3><%= t '.title' %></h3>
+  </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th><%= t '.nome' %></th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projetos.each do |projeto| %>
+<div class="row">
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= projeto.nome %></td>
-        <td><%= link_to t('show'), projeto %></td>
-        <td><%= link_to t('edit'), edit_projeto_path(projeto) %></td>
+        <th><%= t '.nome' %></th>
+        <th colspan="2"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @projetos.each do |projeto| %>
+        <tr>
+          <td width="80%"><%= projeto.nome %></td>
+          <td><%= link_to t('show'), projeto, class: "btn btn-primary btn-sm", role: "button" %></td>
+          <td><%= link_to t('edit'), edit_projeto_path(projeto), class: "btn btn-primary btn-sm", role: "button" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
-<%= link_to t('new'), new_projeto_path %>
+<div class="row">
+  <%= link_to t('new'), new_projeto_path, class: "btn btn-primary", role: "button" %>
+</div>

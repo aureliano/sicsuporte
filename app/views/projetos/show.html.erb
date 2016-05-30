@@ -1,22 +1,50 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-9">
+    <p id="notice"><%= notice %></p>
+  </div>
+</div>
 
-<h1><%= t '.title' %></h1>
+<div class="row">
+  <div class="col-md-9">
+    <h3><%= t '.title' %></h3>
+  </div>
+</div>
 
-<p>
-  <strong><%= t '.nome' %>:</strong>
-  <%= @projeto.nome %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <strong><%= t '.nome' %>:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @projeto.nome %>
+  </div>
+</div>
 
-<p>
-  <strong><%= t '.descricao' %>:</strong>
-  <%= @projeto.descricao %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <strong><%= t '.descricao' %>:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @projeto.descricao %>
+  </div>
+</div>
 
-<p>
-  <strong><%= t '.integracao_continua' %>:</strong>
-  <%= @projeto.integracao_continua %>
-</p>
+<div class="row">
+  <div class="col-md-3">
+    <strong><%= t '.integracao_continua' %>:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @projeto.integracao_continua %>
+  </div>
+</div>
 
-<%= link_to t('edit'), edit_projeto_path(@projeto) %> |
-<%= link_to t('back'), projetos_path %> |
-<%= link_to t('destroy'), @projeto, method: :delete, data: { confirm: t('.confirm_delete', project: @projeto.nome) } %>
+<br/>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= link_to t('edit'), edit_projeto_path(@projeto), class: "btn btn-primary", role: "button" %>
+  
+    <%= link_to t('back'), projetos_path, class: "btn btn-primary", role: "button" %>
+  
+    <%= link_to t('destroy'), @projeto, class: "btn btn-danger", role: "button", method: :delete, data: { confirm: t('.confirm_delete', project: @projeto.nome) } %>
+  </div>
+</div>

@@ -11,19 +11,38 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :nome %><br>
-    <%= f.text_field :nome %>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :nome %>
+    </div>
+    <div class="col-md-8">
+      <%= f.text_field :nome, size: 50 %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :descricao %><br>
-    <%= f.text_field :descricao %>
+
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :descricao %>
+    </div>
+    <div class="col-md-8">
+      <%= f.text_area :descricao, rows: 4, cols: 49 %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :integracao_continua %><br>
-    <%= f.text_field :integracao_continua %>
+  
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :integracao_continua %>
+    </div>
+    <div class="col-md-8">
+      <%= f.text_field :integracao_continua, size: 50 %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <br/>
+
+  <div class="row">
+    <div class="col-md-9">
+      <%= f.submit class: "btn btn-success", role: "button" %>
+    </div>
   </div>
 <% end %>
