@@ -2,11 +2,11 @@ require 'test_helper'
 
 class ProjetoTest < ActiveSupport::TestCase
   
-  test 'project_count' do
+  test 'projeto_count' do
     assert_equal 2, Projeto.count
   end
 
-  test 'assert_tdecis_project' do
+  test 'assert_projeto_tdecis' do
     project = Projeto.where(:nome => 'Trata Decisões').first
     assert_not_nil project
 
@@ -15,7 +15,7 @@ class ProjetoTest < ActiveSupport::TestCase
     assert_equal 'tdecis/', project.integracao_continua
   end
 
-  test 'assert_pre_cadin_project' do
+  test 'assert_projeto_pre_cadin' do
     project = Projeto.where(:nome => 'Pré Cadin').first
     assert_not_nil project
 
