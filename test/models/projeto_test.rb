@@ -24,7 +24,7 @@ class ProjetoTest < ActiveSupport::TestCase
     assert_equal 'precadin/', project.integracao_continua
   end
 
-  test 'validate_name_presence' do
+  test 'validate_nome_presence' do
     project = Projeto.new do |p|
       p.descricao = 'descrição'
       p.integracao_continua = 'link'
@@ -37,7 +37,7 @@ class ProjetoTest < ActiveSupport::TestCase
     assert_equal "não pode ficar em branco", errors[:nome].first
   end
 
-  test 'validate_name_minimum' do
+  test 'validate_nome_minimum' do
     project = Projeto.new do |p|
       p.nome = 'name'
       p.descricao = 'descrição'
@@ -51,7 +51,7 @@ class ProjetoTest < ActiveSupport::TestCase
     assert_equal "é muito curto (mínimo: 5 caracteres)", errors[:nome].first
   end
 
-  test 'validate_name_maximum' do
+  test 'validate_nome_maximum' do
     project = Projeto.new do |p|
       p.nome = ('*' * 51)
       p.descricao = 'descrição'
