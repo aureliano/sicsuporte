@@ -12,6 +12,6 @@ pt-BR:
       nome: Nome
       descricao: Descrição
       integracao_continua: Integração contínua
-      confirm_delete: "Deseja realmente excluir o projeto %{project}?"
+      confirm_delete: "Deseja realmente excluir o projeto \"%{project}\"?"
     edit:
       title: Alterar projeto
