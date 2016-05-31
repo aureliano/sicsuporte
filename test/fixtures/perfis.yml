@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identificador: GCS_GLOBAL
+  nome: Gestor de Configuração de Software Global
+
+two:
+  identificador: GCS_LOCAL
+  nome: Gestor de Configuração de Software Local

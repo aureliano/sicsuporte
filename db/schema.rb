@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160528233122) do
+ActiveRecord::Schema.define(version: 20160531012859) do
+
+  create_table "perfis", force: :cascade do |t|
+    t.string   "identificador"
+    t.string   "nome"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "projetos", force: :cascade do |t|
     t.string   "nome"

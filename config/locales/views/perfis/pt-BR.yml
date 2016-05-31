@@ -1,0 +1,16 @@
+---
+pt-BR:
+  perfis:
+    index:
+      title: Listagem de perfis
+      identificador: Identificador
+      nome: Nome
+    new:
+      title: Novo perfil
+    show:
+      title: Perfil
+      identificador: Identificador
+      nome: Nome
+      confirm_delete: "Deseja realmente excluir o perfil \"%{project}\"?"
+    edit:
+      title: Alterar perfil

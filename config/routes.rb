@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :perfis, path_names: { new: "novo", edit: "editar" }
   resources :projetos, path_names: { new: "novo", edit: "editar" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

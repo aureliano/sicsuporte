@@ -1,0 +1,46 @@
+<% if notice %>
+<div class="row">
+  <div id="success_message" class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <b><%= t 'alert.title.success' %></b>
+
+    <p id="notice"><%= notice %></p>
+  </div>
+</div>
+<% end %>
+
+<div class="row">
+  <div class="col-md-9">
+    <h3><%= t '.title' %></h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong><%= t '.identificador' %>:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @perfil.identificador %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong><%= t '.nome' %>:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @perfil.nome %>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= link_to t('edit'), edit_perfil_path(@perfil), class: "btn btn-primary", role: "button" %>
+  
+    <%= link_to t('back'), perfis_path, class: "btn btn-primary", role: "button" %>
+  
+    <%= link_to t('destroy'), @perfil, class: "btn btn-danger", role: "button", method: :delete, data: { confirm: t('.confirm_delete', project: @perfil.nome) } %>
+  </div>
+</div>

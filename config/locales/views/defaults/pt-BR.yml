@@ -19,6 +19,7 @@ pt-BR:
   menu:
     vertical:
       project: Projetos
+      perfil: Perfis
   alert:
     title:
       info: Informação

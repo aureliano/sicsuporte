@@ -1,0 +1,40 @@
+<%= form_for(@perfil) do |f| %>
+  <% if @perfil.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <b><%= t 'validation_error', error_count: @perfil.errors.count %></b>
+
+      <ul>
+      <% @perfil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :identificador %>
+    </div>
+    <div class="col-md-8">
+      <%= f.text_field :identificador, size: 50 %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :nome %>
+    </div>
+    <div class="col-md-8">
+      <%= f.text_field :nome, size: 50 %>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="row">
+    <div class="col-md-9">
+      <%= f.submit class: "btn btn-success", role: "button" %>
+    </div>
+  </div>
+<% end %>
