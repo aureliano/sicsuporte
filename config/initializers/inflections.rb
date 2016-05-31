@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-ActiveSupport::Inflector.inflections('pt-BR') do |inflect|
+ActiveSupport::Inflector.inflections do |inflect|
   inflect.clear
 
   inflect.plural(/$/,  's')
