@@ -20,6 +20,7 @@ pt-BR:
     vertical:
       project: Projetos
       perfil: Perfis
+      funcionalidade: Funcionalidades
   alert:
     title:
       info: Informação

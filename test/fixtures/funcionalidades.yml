@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  identificador: MANTER_PROJETO
+  nome: Manter Projeto
+  descricao: Permite criar, atualizar, excluir e listar projetos.
+
+two:
+  identificador: MANTER_PERFIL
+  nome: Manter Perfil
+  descricao: Permite criar, atualizar, excluir e listar perfis.

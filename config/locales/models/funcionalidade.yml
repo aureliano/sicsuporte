@@ -1,0 +1,10 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      funcionalidade: Funcionalidade
+    attributes:
+      funcionalidade:
+        identificador: Identificador
+        nome: Nome
+        descricao: Descrição

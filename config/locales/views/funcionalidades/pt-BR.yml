@@ -1,0 +1,17 @@
+---
+pt-BR:
+  funcionalidades:
+    index:
+      title: Listagem de funcionalidades
+      identificador: Identificador
+      nome: Nome
+      descricao: Descrição
+    new:
+      title: Nova funcionalidade
+    show:
+      title: Funcionalidade
+      identificador: Identificador
+      nome: Nome
+      confirm_delete: "Deseja realmente excluir a funcionalidade \"%{funcionalidade}\"?"
+    edit:
+      title: Alterar funcionalidade
