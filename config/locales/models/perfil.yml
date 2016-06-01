@@ -1,0 +1,9 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      perfil: Perfil
+    attributes:
+      funcionalidade:
+        identificador: Identificador
+        nome: Nome
