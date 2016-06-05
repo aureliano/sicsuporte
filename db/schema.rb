@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160531231753) do
+ActiveRecord::Schema.define(version: 20160605150640) do
+
+  create_table "Funcionalidades_Perfis", id: false, force: :cascade do |t|
+    t.integer "perfil_id",         null: false
+    t.integer "funcionalidade_id", null: false
+  end
+
+  add_index "Funcionalidades_Perfis", ["funcionalidade_id", "perfil_id"], name: "index_funcionalidade_id_perfil_id"
+  add_index "Funcionalidades_Perfis", ["perfil_id", "funcionalidade_id"], name: "index_perfil_id_funcionalidade_id"
 
   create_table "funcionalidades", force: :cascade do |t|
     t.string   "identificador"

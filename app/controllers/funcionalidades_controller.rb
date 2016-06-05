@@ -69,6 +69,6 @@ class FuncionalidadesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def funcionalidade_params
-      params.require(:funcionalidade).permit(:identificador, :nome, :descricao)
+      params.require(:funcionalidade).permit(:identificador, :nome, :descricao, { perfil_ids: [] })
     end
 end

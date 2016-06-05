@@ -8,6 +8,7 @@ pt-BR:
       descricao: Descrição
     new:
       title: Nova funcionalidade
+      perfis: Perfis
     show:
       title: Funcionalidade
       identificador: Identificador
@@ -15,3 +16,4 @@ pt-BR:
       confirm_delete: "Deseja realmente excluir a funcionalidade \"%{funcionalidade}\"?"
     edit:
       title: Alterar funcionalidade
+      perfis: Perfis

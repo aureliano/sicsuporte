@@ -39,6 +39,24 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-3">
+      <%= t '.perfis' %>
+    </div>
+    <div class="col-md-8">
+      <% allowed_perfis.each do |perfil| %>
+      <div class="row">
+        <div class="col-md-8">
+          <label>
+            <%= check_box_tag "funcionalidade[perfil_ids][]", perfil.id, f.object.perfis.include?(perfil) %>
+            <%= perfil.nome %>
+          </label>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
   <br/>
 
   <div class="row">
@@ -46,4 +64,4 @@
       <%= f.submit class: "btn btn-success", role: "button" %>
     </div>
   </div>
-<% end %>
+<% end %>  

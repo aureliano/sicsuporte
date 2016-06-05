@@ -1,4 +1,6 @@
 class Funcionalidade < ActiveRecord::Base
+  has_and_belongs_to_many :perfis, autosave: true
+
   validates :identificador, presence: true
   validates :identificador, length: { minimum: 5, maximum: 100 }
 
